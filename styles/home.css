@@ -1,0 +1,254 @@
+body {
+    margin: 0;
+}
+
+
+/* navbar Start css*/
+
+#nav_child_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #949494;
+    width: 70%;
+    margin: auto;
+}
+
+#nav_child_1 p {
+    margin: 7px 0;
+}
+
+#nav_child_2 {
+    width: 100%;
+    background-color: #94949429;
+    padding: 10px 0;
+}
+
+#nav_child_2>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+#nav_child_2>div>div:nth-child(1)>p:nth-child(1) {
+    font-weight: 700;
+    font-size: 30px;
+    color: #f8cd2f;
+    margin: 0;
+}
+
+#nav_child_2>div>div:nth-child(1)>p:nth-child(2) {
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    margin: 0;
+}
+
+#nav_child_2>div>div:nth-child(2) {
+    width: 50%;
+}
+
+#nav_child_2>div>div:nth-child(2)>input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#nav_child_2>div>div:nth-child(2)>input::placeholder {
+    color: #949494;
+}
+
+#nav_child_2>div>div:nth-child(2)>button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    margin-left: -5px;
+    background-color: #f8cd2f;
+}
+
+#nav_child_2>div>div:nth-child(3) {
+    display: flex;
+    gap: 20px;
+    color: #949494;
+}
+
+#nav_child_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+#nav_child_3>a {
+    text-decoration: none;
+    color: #949494;
+}
+
+/* navbar End css*/
+
+/* poster start css */
+
+#poster {
+    background-image: url('https://cutewallpaper.org/21/ford-ranger-raptor-wallpapers/Flipboard-2019-Hennessey-VelociRaptor-Ford-Ranger-first-.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+#poster>div {
+    width: 70%;
+    margin: auto;
+    padding: 80px;
+}
+
+#poster>div>div:nth-child(1)>p:nth-child(1) {
+    font-size: 47px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#poster>div>div:nth-child(1)>p:nth-child(2) {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+}
+
+.txt_W {
+    color: white;
+}
+
+#poster>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10px;
+}
+
+#poster>div>div:nth-child(2)>select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #949494;
+    background-color: #3e423e;
+}
+
+#poster>div>div:nth-child(2)>button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    background-color: #f8cd2f;
+}
+
+/* poster end css */
+
+
+/* categories start css */
+
+
+/* .left {
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+} */
+#categories_container {
+    width: 90%;
+    margin: 35px auto;
+}
+
+#categories_container>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+#categories_container>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+#categories_container>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 45%;
+}
+
+#categories_container h2 {
+    text-align: center;
+}
+
+#categories_container button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-top: 3px;
+}
+
+.right1 {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left1 {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#categories_boxes {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+}
+
+#categories_boxes>div {
+    background-color: #f8f8f8;
+    padding: 15px;
+}
+
+#categories_boxes>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+#categories_boxes>div>div>img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#categories_boxes>div>p {
+    text-align: center;
+    margin: 15px 0 5px 0;
+    color: #949494;
+}
+
+/* categories end css */
