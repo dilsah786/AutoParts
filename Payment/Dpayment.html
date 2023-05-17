@@ -8,41 +8,95 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="maincontainer">
-        <form id="form" action="submit">
+ 
+    <div id="MainBox">
+
+    <div id="addresscontainer">
+
+ <form id="form" action="submit">
     <h1>Welcome to Payment Page</h1>
     <div id="contactlog">
-    <label id="contact" for="Contact">Contact</label><p>Already have an account?<a href="#">Log in</p></a><br>
+    <label id="contact" for="Contact">Contact :</label><p class="allog">Already have an account?<a style="color:darkorange" href="#">Log in</p></a><br>
     
 </div>
-<input type="text" name="contact" id="email" placeholder="Enter an email or phone number"><br>
-        <input type="checkbox" name="" id="emailme"><p>Email me with news and offers</p>
+<input class="box" type="text" name="contact" id="email" placeholder="Enter an email or phone number"><br>
+     
+<div id="emailcheck">
+    <input style="width:18px ;" type="checkbox" name="" id="emailme"><p>Email me with news and offers</p>
+</div>
+        
 
         <div>
-            <label id="Shipping" for="Shipping">Shipping Address</label><br>
-            <input type="text" name="country" id="country" placeholder="Country/Region">
+            <label style="font-size: large;" id="Shipping" for="Shipping">Shipping Address :</label><br> <br>
+            <input class="box"  type="text" name="country" id="country" placeholder="Country/Region">
         </div>
         <div id="name">
             <input type="text" name="name" id="fisrtname" placeholder="First name">
             <input type="text" name="name" id="lastname" placeholder="Last name">
         </div>
         <div>
-            <input type="text" name="address" id="address" placeholder="Address"><br>
-            <input type="text" name="address" id="apartment"  placeholder="Apartment,suite,etc."><br>
+            <input class="box" type="text" name="address" id="address" placeholder="Address"><br>
+            <input class="box"  type="text" name="address" id="apartment"  placeholder="Apartment,suite,etc."><br>
             <input type="text" name="city" class="state" placeholder="City">
             <input type="text" name="State" class="state" placeholder="State">
             <input type="number" name="" class="state" placeholder="258963">
         </div>
-        <div>
-        <input type="checkbox" name="saveaddress" id="saveaddress">
+        <div id="savecheckbox">
+        <input style="width:18px ;" type="checkbox" name="saveaddress" id="saveaddress">
         <p>Save this information for next time</p>
-    </form>
-    <div>
-        <p id="return">＜ Return to cart</p>
-        <button id="shipping" >Continue to shipping</button>
     </div>
+   
+    <div id="return_div">
+        
+            <button id="return">＜ Return to cart</button>
+            <button id="deliver" >Deliver Here</button>
+           
+           
     </div>
+
+
+</form>
 </div>
-    
+
+<div id="itemcontainer">
+
+    <h1>Order Summary</h1>
+   
+    <div id="itemdetail">
+   <img id=img src="https://demo.leebrosus.com/rbpazt/wp-content/uploads/2021/08/product-11-0-460x460.jpg" alt="">
+   <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste et ut dicta minima i</p>
+   <p id="price">$ 30</p>
+    </div>  
+    <hr>
+
+    <div id="total_div">
+       <ul>
+           <li><h3 id="subtotal">Subtotal</h3></li>
+           <li><p>$ 30</p></li>
+       </ul>
+    </div>
+
+    <div >
+        <ul id="shipping_free">
+      <li> <h3>Shipping</h3></li> 
+      <li>  <h3>FREE</h3></li>
+    </ul>
+    </div>
+    <hr>
+
+    <div>
+        <ul id="finaltotal">
+            <li><h3>Total</h3></li>
+            <li><h3>$ 30</h3></li>
+        </ul>
+    </div>
+
+    <button id="checkout">Checkout</button>
+
+
+</div>
+
+
+</div>
 </body>
 </html>
