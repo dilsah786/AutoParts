@@ -94,6 +94,11 @@ body {
 
 /* poster start css */
 
+
+.blur-image {
+    filter: blur(5px);
+}
+
 #poster {
     background-image: url('https://cutewallpaper.org/21/ford-ranger-raptor-wallpapers/Flipboard-2019-Hennessey-VelociRaptor-Ford-Ranger-first-.jpg');
     background-size: cover;
@@ -178,20 +183,26 @@ body {
 }
 
 #categories_container>div:nth-child(1)>div:nth-child(1) {
-    display: flex;
-    justify-content: flex-end;
-    width: 60%;
+    width: 20%;
 }
 
 #categories_container>div:nth-child(1)>div:nth-child(2) {
     display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+#categories_container>div:nth-child(1)>div:nth-child(3) {
+    display: flex;
     justify-content: flex-end;
     gap: 10px;
-    width: 45%;
+    width: 20%;
 }
 
 #categories_container h2 {
     text-align: center;
+    font-size: 30px;
+    margin: 5px 0 15px 0;
 }
 
 #categories_container button {
@@ -252,3 +263,259 @@ body {
 }
 
 /* categories end css */
+
+
+/* Featured products start css */
+
+#featured_container {
+    margin: 50px 0;
+}
+
+#featured_container>h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#featured_boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 70%;
+    margin: auto;
+}
+
+#featured_boxes>div {
+    padding: 25px 70px;
+    background-color: #f8f8f8;
+}
+
+#featured_boxes>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#featured_boxes>div>p {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+#featured_boxes>div>a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#featured_boxes>div>div {
+    width: 90%;
+    margin: auto;
+}
+
+
+#featured_boxes>div>div>img {
+    width: 100%;
+}
+
+/* Featured products end css */
+
+
+/* Deal Start Css */
+
+.fivestar {
+    color: #f8cd2f;
+}
+
+#mainDeal {
+    margin: 40px 0;
+}
+
+#mainDeal>h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#deal_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+#deal_container>div {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#deal_container>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#deal_container>div>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+}
+
+#deal_container>div>div>img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#deal_container>div>p {
+    margin: 10px;
+    color: #949494;
+}
+
+#deal_container>div>button {
+    width: 100%;
+    color: #646467;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+}
+
+#deal_container>div>button:hover {
+    background-color: #f8cd2f;
+}
+
+
+/* Deal End Css */
+
+/* Our bLog start css */
+
+#yel {
+    background-color: #f8cd2f;
+    padding: 100px;
+}
+
+#blog_Container {
+    margin: 60px 0;
+}
+
+#blog_Container>div:nth-child(2) {
+    margin-top: -160px;
+}
+
+#blog_Container>div:nth-child(2)>h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#blog_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+#blog_box>div {
+    background-color: #f8f8f8;
+}
+
+#blog_box>div>div:nth-child(1) {
+    /* width: 50%; */
+}
+
+#blog_box>div>div:nth-child(1)>img {
+    width: 100%;
+}
+
+#blog_box>div>div:nth-child(2) {
+    padding: 5px 25px 20px;
+}
+
+#blog_box>div>div:nth-child(2)>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#blog_box>div>div:nth-child(2)>div>p {
+    margin: 5px 0;
+    color: #949494;
+}
+
+#blog_box>div>div:nth-child(2)>h4 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+#blog_box>div>div:nth-child(2)>a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #949494;
+}
+
+/* Our bLog End css*/
+
+/* Our Offers Start css*/
+
+#offers_container{
+    margin: 60px 0;
+}
+
+#offers_container > h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+#offers_boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+#p1{
+    background-image: url("https://i.pinimg.com/originals/2c/48/4f/2c484f28f6af5d4921a8a9271470740c.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    
+}
+#p2{
+    background-image: url("https://www.6speedonline.com/wp-content/uploads/2016/08/Porsche-dream-garage-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    
+}
+.pos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.pos > div {
+    padding: 10px 25px;
+}
+
+.pos > div > p{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pos > a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 25px;
+}
+
+
+
+/* Our Offers End css*/
