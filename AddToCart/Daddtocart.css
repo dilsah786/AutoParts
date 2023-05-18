@@ -1,0 +1,15 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+}
+li{
+    list-style: none;
+}
+.img{
+    width:100px
+}
+#maincontainer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}

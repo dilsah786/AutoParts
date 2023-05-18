@@ -27,3 +27,15 @@ close.addEventListener("mouseover",function(){
     
 
    })
+
+   let homebtn=document.getElementById("homepage")
+
+   homebtn.addEventListener("click",homepage)
+
+   function homepage(){
+      window.location.href="../AddToCart/Daddtocart.html"
+   }
+
+   let checkoutpagebtn=document.getElementById("checkoutpage").addEventListener("click",()=>{
+      window.location.href="../Checkout/Dpayment.html"
+   })

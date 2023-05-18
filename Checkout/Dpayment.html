@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Dpayment.css">
-    <title>Document</title>
+    <title>checkoutpage</title>
 </head>
 <body>
  
@@ -37,19 +37,21 @@
         <div>
             <input class="box" type="text" name="address" id="address" placeholder="Address"><br>
             <input class="box"  type="text" name="address" id="apartment"  placeholder="Apartment,suite,etc."><br>
-            <input type="text" name="city" class="state" placeholder="City">
-            <input type="text" name="State" class="state" placeholder="State">
-            <input type="number" name="" class="state" placeholder="258963">
+            <input type="text" name="city" class="state" id="city" placeholder="City">
+            <input type="text" name="State" class="state" id="state" placeholder="State">
+            <input type="number" name="" class="state" id="pincode" placeholder="258963">
         </div>
+        
         <div id="savecheckbox">
         <input style="width:18px ;" type="checkbox" name="saveaddress" id="saveaddress">
         <p>Save this information for next time</p>
     </div>
    
+   
     <div id="return_div">
         
             <button id="return">＜ Return to cart</button>
-            <button id="deliver" >Deliver Here</button>
+            <button id="deliver" type="submit" >Deliver Here</button>
            
            
     </div>
@@ -98,5 +100,6 @@
 
 
 </div>
+<script src="../Checkout/Dpayment.js"></script>
 </body>
 </html>
