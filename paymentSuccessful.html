@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Payment successfull</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #paySuccess>div:nth-child(1) {
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            margin: auto;
+        }
+
+        #paySuccess>div:nth-child(1)>img {
+            width: 100%;
+        }
+
+        #paySuccess>div:nth-child(2) {
+            width: 60%;
+            margin: 60px auto;
+            text-align: center;
+            /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+            /* padding: 50px; */
+        }
+
+        #paySuccess>div:nth-child(2)>p:nth-child(1) {
+            font-size: 160px;
+            font-family: 'Satisfy', cursive;
+            color: #f8cd2f;
+            margin: 20px;
+        }
+
+        #paySuccess>div:nth-child(2)>p:nth-child(2) {
+            font-size: 30px;
+            margin: 18px;
+        }
+
+        #icon {
+            color: green;
+        }
+
+        #paySuccess>div:nth-child(2)>button {
+            padding: 6px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #f8cd2f;
+            color: black;
+        }
+
+        #paySuccess>div:nth-child(2)>button:hover {
+            background-color: #000000;
+            color: #f8cd2f;
+        }
+
+        #paySuccess>p:nth-child(3) {
+            text-align: center;
+        }
+
+        #paySuccess>div:nth-child(4) {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="paySuccess">
+        <div>
+            <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="logo">
+        </div>
+
+        <div>
+            <p>Thank You !</p>
+            <p>Your Payment is successfull <span id="icon"><i class="fa-solid fa-circle-check"></i></span></p>
+            <p>Congratulations! Your payment for the car auto parts has been successfully processed. Thank you for your
+                purchase. We appreciate your business and look forward to delivering the highest quality parts to
+                enhance your vehicle's performance.
+            </p>
+            <p>Drive safely and enjoy your new parts!</p>
+            <button>Back to Home</button>
+        </div>
+        <p>Invite your friends to join you!</p>
+        <div>
+            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span><i class="fa-brands fa-twitter"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-linkedin-in"></i></span>
+        </div>
+    </div>
+
+</body>
+
+</html>

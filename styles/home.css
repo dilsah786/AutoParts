@@ -497,9 +497,7 @@ body {
     background-color: #f8f8f8;
 }
 
-#blog_box>div>div:nth-child(1) {
-    /* width: 50%; */
-}
+
 
 #blog_box>div>div:nth-child(1)>img {
     width: 100%;
