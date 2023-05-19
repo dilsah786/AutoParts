@@ -15,6 +15,15 @@ function GoToSignup() {
     window.location.href = "../Signup/signup.html"
 }
 
+const home = document.getElementById("logo")
+logo.addEventListener("click", GoToHome)
+
+function GoToHome() {
+    // Change
+    window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha"
+
+}
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", function(event) {
@@ -37,7 +46,8 @@ form.addEventListener("submit", function(event) {
             }
         }
         if (loggedIn) {
-            alert("Login Successful"); // window.location.href=""
+            // Change
+            window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha";
         } else {
             alert("Invalid email address or password");
         }

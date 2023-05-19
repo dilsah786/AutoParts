@@ -14,6 +14,15 @@ signup.addEventListener("click", GoToLogin)
 function GoToLogin() {
     window.location.href = "../Login/login.html"
 }
+
+const home = document.getElementById("logo")
+logo.addEventListener("click", GoToHome)
+
+function GoToHome() {
+    // Change
+    window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha"
+
+}
 const signupbtn = document.getElementById("signupbtn");
 signupbtn.addEventListener("click", storeData);
 
