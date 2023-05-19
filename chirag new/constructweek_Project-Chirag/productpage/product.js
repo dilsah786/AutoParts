@@ -128,7 +128,7 @@ const exteriorParts = [
       ratings: 4.2
     },
     {
-      image: "https://m.media-amazon.com/images/I/710CHKJ0puL._SX522_.jpg",
+      image: "https://carorbis.com/wp-content/uploads/2022/03/1-01-8-280x280.png",
       category: "Exterior Parts",
       productName: "Tyre inflator",
       markedPrice: 29.99,
@@ -146,7 +146,7 @@ const exteriorParts = [
     {
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFAWYpAOh_3vJNAnQIbvTTaqi6dxv8OjGag&usqp=CAU",
       category: "Exterior Parts",
-      productName: "License Plate ",
+      productName: "License Plate Frame",
       markedPrice: 9.99,
       discountedPrice: 7.99,
       ratings: 4.2
@@ -197,34 +197,6 @@ document.getElementById("sortOptions").addEventListener("change", function () {
   sortingOption = this.value;
   exterior(exteriorParts);
 });
-
-
-
-//debouncing
-const debounceDelay = 300;
-
-let debounceTimer;
-
-// Add event listener to the search input field
-document.getElementById("search_input").addEventListener("input", function (event) {
-  // Clear the previous debounce timer
-  clearTimeout(debounceTimer);
-
-  // Start a new debounce timer
-  debounceTimer = setTimeout(function () {
-    const searchQuery = event.target.value.trim().toLowerCase();
-
-    // Filter the data based on the search query
-    const filteredData = exteriorParts.filter(function (item) {
-      return item.productName.toLowerCase().includes(searchQuery);
-    });
-
-    // Call the exterior function with the filtered data
-    exterior(filteredData);
-  }, debounceDelay);
-});
-
-
 
 function exterior(datapart) {
   // Apply sorting based on selected option
@@ -300,7 +272,7 @@ function exterior(datapart) {
       addToCartButton.classList.remove("zoom-in");
     });
     addToCartButton.style.display = "none"; // Hide the button initially
-//CARTKEY
+
     addToCartButton.addEventListener("click", function () {
       // Save item to local storage
       let cartItems = localStorage.getItem("cartItems")
