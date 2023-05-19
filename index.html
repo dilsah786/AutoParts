@@ -24,8 +24,7 @@
             <div id="nav_child_2">
                 <div>
                     <div>
-                        <p>AUTO PART</p>
-                        <p>COMPANY LOGO</p>
+                        <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="">
                     </div>
                     <div>
                         <input type="text" id="search_input" placeholder="Search by Model Year, Products...">
@@ -100,8 +99,8 @@
             </div>
 
             <div>
-                <button><i class="arrow left1"></i></button>
-                <button><i class="arrow right1"></i></button>
+                <button onclick="leftScrollCat()"><i class="arrow left1"></i></button>
+                <button onclick="rightScrollCat()"><i class="arrow right1"></i></button>
             </div>
         </div>
 
@@ -161,6 +160,20 @@
                 </div>
                 <p>Tools & Garage</p>
             </div>
+            <div>
+                <div>
+                    <img src="https://www.pngall.com/wp-content/uploads/8/Wheel-Tire-PNG-Free-Download.png"
+                        alt="Wheels & Tires">
+                </div>
+                <p>Wheels & Tires</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://static.wixstatic.com/media/a7a0c3_240813ac6f8a431d8d6fa3e96dcc4c78~mv2.jpg/v1/fill/w_426,h_414,al_c,lg_1,q_80,enc_auto/top-category-auto-body-parts-and-mirrors.jpg"
+                        alt="Body Parts">
+                </div>
+                <p>Body Parts</p>
+            </div>
         </div>
     </div>
 
@@ -170,6 +183,7 @@
 
     <div id="featured_container">
         <h2>FEATURED PRODUCTS</h2>
+        <button class="left" onclick="leftScroll()"><i class="arrow left1"></i></button>
         <div id="featured_boxes">
             <div>
                 <p>AIR LIFT 57268 LOADLIFTER 5000; LEAF SPRING LEVELING KIT</p>
@@ -185,7 +199,29 @@
                     <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
                 </div>
             </div>
+            <div>
+                <p>BANKS POWER RAM-AIR COLD-AIR INTAKE SYSTEM DRY FILTER 11-14 FORD F-150 3.5L ECOBOOST</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
+                </div>
+            </div>
+            <div>
+                <p>BANKS POWER RAM-AIR COLD-AIR INTAKE SYSTEM DRY FILTER 11-14 FORD F-150 3.5L ECOBOOST</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
+                </div>
+            </div>
+            <div>
+                <p>AIR LIFT 57268 LOADLIFTER 5000; LEAF SPRING LEVELING KIT</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/MprQrBd0/My-project.png" alt="Air">
+                </div>
+            </div>
         </div>
+        <button class="right" onclick="rightScroll()"><i class="arrow right1"></i></button>
     </div>
 
     <!-- Featured products end -->
@@ -471,6 +507,7 @@
         <div id="yel"></div>
         <div>
             <h2>OUR BLOG</h2>
+            <button class="left" onclick="leftScrollBlog()"><i class="arrow left1"></i></button>
             <div id="blog_box">
                 <div>
                     <div>
@@ -511,8 +548,21 @@
                         <a href="#">Learn More ></a>
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/jdYdYb5W/b1.jpg" alt="car">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Exterior</p>
+                            <p>14 Dec</p>
+                        </div>
+                        <h4>Top Ford Ranger Products For Fail</h4>
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
             </div>
-            
+            <button class="right" onclick="rightScrollBlog()"><i class="arrow right1"></i></button>
         </div>
     </div>
 
@@ -522,26 +572,225 @@
 
     <div id="offers_container">
         <h2>OUR OFFERS</h2>
+        <button class="left" onclick="leftScrollOffer()"><i class="arrow left1"></i></button>
         <div id="offers_boxes">
-            <div class="pos" id="p1">
-                <div>
-                    <p>LIMITED OFFERS </p>
-                    <p>REPAIR PARTS</p>
+            <div>
+                <div class="pos" id="p1">
+                    <div>
+                        <p>LIMITED OFFERS </p>
+                        <p>REPAIR PARTS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
                 </div>
-                <a href="#">Learn More ></a>
             </div>
-            <div class="pos" id="p2">
-                <div>
-                    <p>BODY PARTS</p>
-                    <p>BEST OFFERS</p>
+            <div>
+                <div class="pos" id="p2">
+                    <div>
+                        <p>BODY PARTS</p>
+                        <p>BEST OFFERS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
                 </div>
-                <a href="#">Learn More ></a>
             </div>
+            <div>
+                <div class="pos" id="p1">
+                    <div>
+                        <p>LIMITED OFFERS </p>
+                        <p>REPAIR PARTS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div>
+                <div class="pos" id="p2">
+                    <div>
+                        <p>BODY PARTS</p>
+                        <p>BEST OFFERS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            
         </div>
+        <button class="right" onclick="rightScrollOffer()"><i class="arrow right1"></i></button>
     </div>
 
     <!-- Our Offers End -->
 
+
+    <!-- Makes Models Start -->
+
+    <div id="mm_container">
+        <div>
+            <a href="#">FEATURED MAKES</a>
+            <a href="#">FEATURED MODELS</a>
+        </div>
+        <div>
+            <div>
+                <p>Kai</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Honda</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Subaru</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Chevy</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Ford</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Nissan</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Dodge</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Ram</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Toyoto</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Jeep</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>GMC</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Hyundai</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Cadillc</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Mercedes</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Lexus</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Makes Models End -->
+
+
+    <!-- footer Start -->
+
+    <div id="footer_container">
+        <div id="footer_box">
+            <div>
+                <h4>About Us</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the
+                    industry's standard dummy, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.</p>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <p>447 Broadway, F1 2,<br> New York, NY, 10013</p>
+                <p>info@convermax.com</p>
+                <p>800-451- 0972</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p>Customer Service</p>
+                <p>Return Policy</p>
+                <p>Shipping & Delivery</p>
+                <p>Our Story</p>
+                <p>About Us</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <input type="text" placeholder="Email Address">
+                <button>Subscribe</button>
+                <div>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer End -->
+
+    <div id="copyrights">
+        <div id="copyrights_box">
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/VLNrKz2t/l12.png" alt="logoAuto">
+                </div>
+            </div>
+            <div>
+                <p>copyrights 2020 <span id="yAUot"> AUTO PART</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/52x1785s/allcards.png" alt="AllCards">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function leftScrollCat() {
+            const leftCat = document.querySelector("#categories_boxes");
+            leftCat.scrollBy(-200, 0);
+        }
+        function rightScrollCat() {
+            const rightCat = document.querySelector("#categories_boxes");
+            rightCat.scrollBy(200, 0);
+        }
+        function leftScroll() {
+            const left = document.querySelector("#featured_boxes");
+            left.scrollBy(-200, 0);
+        }
+        function rightScroll() {
+            const right = document.querySelector("#featured_boxes");
+            right.scrollBy(200, 0);
+        }
+        function leftScrollBlog() {
+            const leftBlog = document.querySelector("#blog_box")
+            leftBlog.scrollBy(-200, 0);
+        }
+        function rightScrollBlog() {
+            const rightBlog = document.querySelector("#blog_box")
+            rightBlog.scrollBy(200, 0);
+        }
+        function leftScrollOffer() {
+            const leftOffer = document.querySelector("#offers_boxes")
+            leftOffer.scrollBy(-200, 0);
+        }
+        function rightScrollOffer() {
+            const rightOffer = document.querySelector("#offers_boxes")
+            rightOffer.scrollBy(200, 0);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>
