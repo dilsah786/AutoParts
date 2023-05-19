@@ -4,31 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
     <title>Exterior page</title>
+    <!-- External CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-BUP8S7iwW1BuQGyK0lgcaT40odrA8ojbML9XItxlXcL1VRW7JLId/R3KfNDoWXTBfySKB13V5UeXVjsddnw1LA==" crossorigin="anonymous" />
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-pzjw8r+ua5BL3E5+gXk8PTk2t8gkZ8czg4Uv/6w1zCk5Og5f3E3S6laSL6z3U4Wu" crossorigin="anonymous">
+
   </head>
   <style>
 /* main.css */
 
 /* Background styling */
 body {
+  position: relative;
   clear: both;
   border-bottom: 6px solid #000;
   padding: 10px;
   padding-top: 20px;
-  line-height: 1.65em;
-  background-image: url("https://img.freepik.com/premium-psd/3d-render-sport-car-transparent-background_221414-736.jpg?w=2000");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 18px;
   color: #000;
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://car-images.bauersecure.com/wp-images/3639/ferrari_f8_spider_68.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the value to increase or decrease the blur effect */
+  z-index: -1;
+  
+  filter: grayscale(20%) blur(5px);
+
 }
 
 /* Container styling */
 #mainDiv {
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 0 20px;
+  height: 30%;
 }
 
 /* Categories styling */
@@ -36,17 +58,22 @@ body {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 10px;
   font-family: Arial, sans-serif;
-  border: 1px solid #ced4daba;
+  border: 2px solid rgb(240, 182, 35);
+  padding:20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   width: 250px;
   margin-left: 20px;
 }
+.categories:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .categories h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #000;
+  color: white;
+  background-color: #f4c622;
 }
 
 .categories ul {
@@ -83,13 +110,16 @@ body {
   gap: 20px;
   padding: 10px;
   margin-left: 60px;
+  height: 30%;
 }
 
 /* Item card styling */
 .child {
-  width: 270px;
-  max-height: 100%;
+  width: 290px;
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,7 +127,7 @@ body {
   text-align: center;
   margin: 10px 0;
   background-color: white;
-  border: 1px solid rgba(128, 128, 128, 0.94);
+  border: 2px solid rgb(240, 182, 35);
   border-radius: 5px;
   cursor: pointer;
   margin-bottom: 10px;
@@ -105,7 +135,10 @@ body {
   overflow: hidden;
   color: #000;
 }
-
+.child:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 .child img {
   max-width: 100%;
   max-height: 70%;
@@ -124,14 +157,15 @@ body {
 
 .child h3 {
   font-size: smaller;
-  color: black;
+  color: white;
+  background-color: #f4c622;
   align-items: left;
   margin-top: 60px;
   font-weight: lighter;
-  color: #000;
+  padding:0 10px;
 }
 .child h4 {
-  font-size: 20px; /* Adjust the value to your desired font size */
+  font-size: 25px; /* Adjust the value to your desired font size */
   font-weight: bold;
   color: rgba(0, 0, 0, 0.744); /* Adjust the color to your desired catchy color */
   text-transform: uppercase;
@@ -154,7 +188,7 @@ body {
 }
 
 .product-rating .star.filled {
-  background-color: #ffff00;
+  background-color: rgb(255, 186, 13);
 }
 
 .product-rating .rating-count {
@@ -167,7 +201,7 @@ body {
 }
 
 .add-to-cart-button {
-  background-color:rgb(248, 192, 22);
+  background-color:rgb(248, 194, 30);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -192,8 +226,9 @@ body {
   padding: 8px 12px;
   margin: 4px;
   border: none;
-  background-color: #f2f2f2;
-  color: #333;
+  background-color:rgb(255, 193, 34);
+  transition: background-color 0.3s ease-in-out;
+  color: white;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
@@ -203,11 +238,11 @@ body {
   background-color: #ddd;
 }
 
+
 .pagination-button.active {
   background-color: #007bff;
   color: #fff;
 }
-
 
 
 .sort-container {
@@ -219,20 +254,384 @@ body {
   padding: 8px;
   border: none;
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: rgb(249, 189, 36);
   font-size: 16px;
   cursor: pointer;
   outline: none;
   float: right;
-  transform: translateX(-130%);
+  color: #fff;
+  transform: translateX(-155%);
+  transition: background-color 0.3s ease-in-out;
 }
 
 #sortOptions:hover {
-  background-color: #232222;
+  background-color: #2322222c;
 }
 
+
+#nav_child_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #949494;
+    width: 70%;
+    margin: auto;
+}
+
+#nav_child_1 p {
+    margin: 7px 0;
+}
+
+#nav_child_2 {
+    width: 100%;
+    background-color: #94949429;
+    padding: 10px 0;
+}
+
+#nav_child_2>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+#nav_child_2>div>div:nth-child(1) {
+    width: 22%;
+}
+
+#nav_child_2>div>div:nth-child(1)>img {
+    width: 100%;
+}
+
+#nav_child_2>div>div:nth-child(2) {
+    width: 50%;
+}
+
+#nav_child_2>div>div:nth-child(2)>input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#nav_child_2>div>div:nth-child(2)>input::placeholder {
+    color: #949494;
+}
+
+#nav_child_2 > div > div:nth-child(2) > button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  margin-left: -5px;
+  background-color: #ffd027;
+  color: #fff; /* Set the text color to white */
+}
+
+#nav_child_2 > div > div:nth-child(2) > button i {
+  margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+#nav_child_2>div>div:nth-child(3) {
+    display: flex;
+    gap: 20px;
+    color: #949494;
+}
+
+#nav_child_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+#nav_child_3>a {
+    text-decoration: none;
+    color: #949494;
+}
+/* footer Start Css */
+
+#footer_container {
+    margin-top: 60px;
+    padding: 25px 0;
+    background-color: #1a1d1e;
+}
+
+#footer_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+#footer_box>div>h4 {
+    margin-bottom: 0;
+}
+
+#footer_box>div:nth-child(1)>p {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(2)>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(2)>p:nth-child(4) {
+    color: #f8cd2f;
+}
+
+#footer_box>div:nth-child(3)>p {
+    margin: 5px 0;
+}
+
+#footer_box>div:nth-child(3)>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(4)>input {
+    margin-top: 10px;
+    padding: 6px;
+    width: 95%;
+}
+
+#footer_box>div:nth-child(4)>button {
+    margin-top: 10px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #f8cd2f;
+    font-weight: 600;
+}
+
+#footer_box>div:nth-child(4)>div {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    color: #949494;
+}
+
+.fa-brands {
+    border: 1px solid #949494;
+    padding: 4px 5px;
+}
+
+.fa-brands:hover {
+    border: 1px solid #f8cd2f;
+}
+
+.fa-facebook-f:hover {
+    color: #f8cd2f;
+}
+
+.fa-twitter:hover {
+    color: #f8cd2f;
+}
+
+.fa-instagram:hover {
+    color: #f8cd2f;
+}
+
+.fa-linkedin-in:hover {
+    color: #f8cd2f;
+}
+
+/* footer End Css */
+
+/* CopuRights Start Css */
+
+#copyrights {
+    background-color: #080808;
+    padding: 3px 0;
+}
+
+#copyrights_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+#copyrights_box>div:nth-child(1)>div {
+    width: 50%;
+}
+
+#copyrights_box>div:nth-child(1)>div>img {
+    width: 100%;
+}
+
+#copyrights_box>div:nth-child(2)>p {
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+
+#copyrights_box>div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#copyrights_box>div:nth-child(3)>div {
+    width: 60%;
+}
+
+#copyrights_box>div:nth-child(3)>div>img {
+    width: 100%;
+}
+
+#yAUot {
+    color: #f8cd2f;
+}
+
+/*external css librarie*/
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  .mfp-hide {
+    display: none !important;
+  }
+
+/* CopuRights End Css */
+
+/* Media Queries */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  #mainDiv {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  .categories {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #itemDiv {
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    margin-left: 0;
+  }
+  
+  .child {
+    width: 100%;
+  }
+  #nav_child_1 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #nav_child_2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  #nav_child_2 > div {
+    width: 90%;
+  }
+
+  #nav_child_2 > div > div:nth-child(1) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #nav_child_2 > div > div:nth-child(2) {
+    width: 100%;
+  }
+
+  #nav_child_2 > div > div:nth-child(2) > input {
+    width: 70%;
+  }
+
+  #nav_child_2 > div > div:nth-child(2) > button {
+    width: 25%;
+  }
+
+  #nav_child_2 > div > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #nav_child_3 {
+    width: 90%;
+    justify-content: center;
+  }
+}
+
+/* For screens with a minimum width of 1200px */
+@media (min-width: 1100px) {
+  #mainDiv {
+    justify-content: center;
+  }
+
+  .categories {
+    margin-left: 20px;
+    width: 250px;
+  }
+
+  #itemDiv {
+    margin-left: 60px;
+  }
+}
+
+
   </style>
+
+
+
   <body>
+
+   
+    <div id="navbar_container">
+      <div id="nav_parent">
+          <div id="nav_child_1">
+              <p>Help | Order Status</p>
+              <p>Free shipping : On All U.S. Orders Over $100</p>
+              <p><span><i class="fa-solid fa-phone"></i></span> 123.456.7890</p>
+          </div>
+          <div id="nav_child_2">
+              <div>
+                  <div>
+                      <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="">
+                  </div>
+                  <div>
+                      <input type="text" id="search_input" placeholder="Search by Model Year, Products...">
+                      <button id="search_btn"><i class="fas fa-search"></i></button>
+                  </div>
+                  <div>
+                      <p>My Account</p>
+                      <p>Garage</p>
+                      <p><i class="fa-solid fa-heart"></i></p>
+                      <p><i class="fa-solid fa-cart-shopping"></i></p>
+                  </div>
+              </div>
+          </div>
+          <div id="nav_child_3">
+              <a href="#">Exterior</a>
+              <a href="#">Interior</a>
+              <a href="#">Performance</a>
+              <a href="#">Wheels and Tires</a>
+              <a href="#">Body Parts</a>
+              <a href="#">Repair Parts</a>
+              <a href="#">Electronics</a>
+              <a href="#">Tools & Garage</a>
+          </div>
+      </div>
+  </div>
+
+
     <div class="sort-container">
     <select id="sortOptions">
       <option value="lowToHigh">Sort Low to High</option>
@@ -294,6 +693,69 @@ body {
    <div id="itemDiv">
    </div>
    </div>
+
+
+    <!-- footer Start -->
+
+    <div id="footer_container">
+      <div id="footer_box">
+          <div>
+              <h4>About Us</h4>
+              <p>Auto Parts Spares ensures the complete durability and compatibility of its products, it has an upper hand over the automobile marketing industry. We have successfully established our name in the car spare parts market with our loyalty and trustworthiness over customers.</p>
+          </div>
+          <div>
+              <h4>Get in Touch</h4>
+              <p>447 Broadway, F1 2,<br> New York, NY, 10013</p>
+              <p>info@convermax.com</p>
+              <p>800-451- 0972</p>
+          </div>
+          <div>
+              <h4>Quick Links</h4>
+              <p>Customer Service</p>
+              <p>Return Policy</p>
+              <p>Shipping & Delivery</p>
+              <p>Our Story</p>
+              <p>About Us</p>
+              <p>Blog</p>
+          </div>
+          <div>
+              <h4>Get in Touch</h4>
+              <input type="text" placeholder="Email Address">
+              <button>Subscribe</button>
+              <div>
+                  <span><i class="fa-brands fa-facebook-f"></i></span>
+                  <span><i class="fa-brands fa-twitter"></i></span>
+                  <span><i class="fa-brands fa-instagram"></i></span>
+                  <span><i class="fa-brands fa-linkedin-in"></i></span>
+              </div>
+          </div>
+      </div>
+
+  </div>
+
+  <!-- footer End -->
+
+  <div id="copyrights">
+      <div id="copyrights_box">
+          <div>
+              <div>
+                  <img src="https://i.postimg.cc/VLNrKz2t/l12.png" alt="logoAuto">
+              </div>
+          </div>
+          <div>
+              <p>copyrights 2023 <span id="yAUot"> AUTO PART</span></p>
+              <p>All rights reserved.</p>
+          </div>
+          <div>
+              <div>
+                  <img src="https://i.postimg.cc/52x1785s/allcards.png" alt="AllCards">
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </body>
   <script src="product.js"></script>
 </html>
