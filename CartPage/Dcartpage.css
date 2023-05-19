@@ -1,0 +1,88 @@
+
+#details{
+    display: flex;
+    justify-content: space-between;
+ 
+  
+}
+#img{
+  width: 50px;
+}
+#delete{
+    font-size: 30px;
+}
+#delete:hover{
+    color: red;
+}
+div:nth-child(2){
+   
+    display: flex;
+    justify-content: space-between;
+}
+#cart h1{
+    padding-top:20px;
+}
+#cart button{
+    border: none;
+    background-color: white;
+}
+
+
+#total{
+    display: flex;
+    justify-content: space-between;
+   }
+   #subtotal{
+   margin-left: -30px;
+   }
+   li{
+    list-style-type: none;
+   }
+   #coupon{
+    display: flex;
+    justify-content: space-between;
+   }
+   #couponcode{
+    border: none;
+    height: 40px;
+    width:100%;
+   }
+
+   #apply{
+    border: none;
+    background-color: rgb(255, 255, 255);
+   }
+   #button{
+   display: flex;
+    justify-content: space-between;
+   }
+   #homepage{
+ display: block;
+ width: 50%;
+ height: 70px;
+ color:white;
+ font-size: medium;
+ font-weight: 600;
+ background-color: black;
+   }
+   #homepage:hover{
+    color:  rgb(215, 186, 18);
+    font-size: larger;
+
+   }
+   #checkoutpage{
+    display: block;
+    width: 50%;
+    color:black;
+    font-size: medium;
+    font-weight: 600;
+    height: 70px;
+    background-color: #ffa500;
+    
+   }
+   #checkoutpage:hover{
+    background-color: rgb(167, 154, 62);
+    color: rgb(255, 174, 0);
+    
+   }
+
