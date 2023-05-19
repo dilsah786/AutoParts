@@ -52,42 +52,48 @@ body {
 }
 
 #form-div #label1 {
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
-    font-size: 120%;
+    font-size: 110%;
+    padding-left: 8px;
 }
 
 #form-div #label2 {
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
-    font-size: 120%;
+    font-size: 110%;
+    padding-left: 8px;
 }
 
 #form-div #pass-label {
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
-    font-size: 120%;
+    font-size: 110%;
+    padding-left: 8px;
 }
 
 #form-div #input1 {
     background-color: rgba(247, 242, 242, 0.884);
-    width: 98%;
+    margin-left: 2%;
+    width: 95%;
     height: 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 #form-div #input2 {
-    background-color: rgba(247, 242, 242, 0.884);
-    width: 98%;
+    margin-left: 2%;
+    width: 95%;
     height: 30px;
+    background-color: rgba(247, 242, 242, 0.884);
     border: none;
     border-radius: 5px;
 }
 
 #form-div #password {
     background-color: rgba(247, 242, 242, 0.884);
-    width: 98%;
+    margin-left: 2%;
+    width: 95%;
     height: 30px;
     border: none;
     border-radius: 5px;
@@ -118,10 +124,15 @@ p {
     font-weight: 750;
     margin-top: 2%;
     margin-bottom: 10%;
-    width: 100%;
+    margin-left: 1.5%;
+    width: 97%;
     height: 40px;
-    border: none;
+    border: 2px solid rgb(255, 187, 0);
     background-color: rgb(255, 187, 0);
     border-radius: 8px;
     color: black;
+}
+
+#form-div button:active {
+    border-color: rgb(160, 111, 6);
 }
