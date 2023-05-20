@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #product-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #image-container img {
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  #details-container {
+    margin-left: 30px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .discounted-price {
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 10px;
+  }
+  
+  .rating {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #add-to-cart {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #add-to-cart:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation classes from animate.css library */
+  .animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .animate__fadeIn {
+    animation-name: fadeIn;
+  }
+  
+  .animate__bounce {
+    animation-name: bounce;
+  }
+  
+  /* Font Awesome icons */
+  .fas {
+    margin-right: 5px;
+    color: gold;
+  }
+  

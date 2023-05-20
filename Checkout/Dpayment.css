@@ -1,0 +1,503 @@
+.divs-body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 8px;
+}
+
+#MainBox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#addresscontainer {
+    width: 50%;
+    flex: 1;
+    padding: 15px;
+    background-color: #FFD700;
+    color: #000;
+}
+#contactlog{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    margin-top: 20px;
+
+}
+.allog{
+    margin-top: 20px;
+    margin-left: 55%;
+    
+}
+
+#itemcontainer {
+    width: 50%;
+    flex: 1;
+    background-color: #000;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    color: #333;
+}
+in
+
+.box {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+#name {
+    display: flex;
+    gap: 10px;
+  
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    height: 25px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.state {
+display: flex;
+justify-content: space-between;
+}
+
+#emailcheck {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#emailcheck input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+#savecheckbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#deliver {
+    background-color: #FFD700;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deliver:hover {
+    background-color: #DAA520;
+}
+
+#itemcontainer h1 {
+    color: #FFD700;
+}
+
+#itemcontainer form {
+    margin-top: 10px;
+}
+
+#itemcontainer form input[type="text"],
+#itemcontainer form input[type="number"],
+#itemcontainer form input[type="date"] {
+    width: 100%;
+    height: 25px;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+#itemcontainer form button {
+    background-color: #FFD700;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#itemcontainer form button:hover {
+    background-color: #DAA520;
+}
+
+#paymentOptions {
+    color: #FFF;
+    margin-top: 10px;
+}
+
+#paymentOptions h2 {
+    color: #FFD700;
+}
+
+#cashPayment label,
+#cardPayment label {
+    color: #FFF;
+}
+
+#cashPayment input[type="checkbox"],
+#cardPayment input[type="checkbox"] {
+    margin-right: 6px;
+}
+#confirm{
+    width: 80px;
+    height: 40px;
+   margin-top: 50px;
+  
+    border-radius: 5px;
+    background-color: #dc900c;
+    margin-left: 350px;
+}
+#confirm:hover{
+    width: 80px;
+    height: 40px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #ebbf74;
+    
+}
+#proceedButton {
+    background-color: #FFD700;
+    color: #000;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 60px;
+    margin-left: 270px;
+}
+
+#proceedButton:hover {
+    background-color: #DAA520;
+}
+
+#valid {
+    margin-left: 350px;
+}
+
+#deliver {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deliver:hover {
+    background-color: #DAA520;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#deliver:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FFD700;
+}
+
+input{
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) and (min-width:300px){
+    .divs-body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 8px;
+    }
+    
+    #MainBox {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    #addresscontainer {
+        width:50%;
+        flex: 1;
+        padding: 15px;
+        background-color: #FFD700;
+        color: #000;
+    }
+    
+    #itemcontainer {
+        width: 50%;
+        flex: 1;
+        background-color: #000;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 0;
+        color: #333;
+    }
+    
+    .box {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    
+    #name {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"] {
+        width: 100%;
+        height: 25px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+    
+    .state {
+        width: calc(50% - 4px);
+    }
+    
+    #emailcheck {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    #emailcheck input[type="checkbox"] {
+        margin-right: 6px;
+    }
+    
+    #savecheckbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    #deliver {
+        background-color: #FFD700;
+        color: #000;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #deliver:hover {
+        background-color: #DAA520;
+    }
+    
+    #itemcontainer h1 {
+        color: #FFD700;
+    }
+    
+    #itemcontainer form {
+        margin-top: 10px;
+        
+    }
+    
+    #itemcontainer form input[type="text"],
+    #itemcontainer form input[type="number"],
+    #itemcontainer form input[type="date"] {
+        width: 100%;
+        height: 25px;
+        padding: 4px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #itemcontainer form button {
+        margin:auto;
+        background-color: #FFD700;
+        color: #000;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #itemcontainer form button:hover {
+        background-color: #DAA520;
+    }
+    
+    #paymentOptions {
+        color: #FFF;
+        margin-top: 10px;
+    }
+    
+    #paymentOptions h2 {
+        color: #FFD700;
+    }
+    
+    #cashPayment label,
+    #cardPayment label {
+        color: #FFF;
+    }
+    
+    #cashPayment input[type="checkbox"],
+    #cardPayment input[type="checkbox"] {
+        margin-right: 6px;
+    }
+    #confirm{
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #dc900c;
+        margin-left: 150px;
+    }
+    #confirm:hover{
+        width: 80px;
+        height: 40px;
+        font-size: larger;
+        font-weight: 500;
+        border-radius: 5px;
+        background-color: #ebbf74;
+        margin-left: 150px;
+    }
+    #proceedButton {
+        background-color: #FFD700;
+        color: #000;
+        font-size: 8px;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 40px;
+        margin-left: 220px;
+        width: 80px;
+    }
+    
+    #proceedButton:hover {
+        background-color: #dc900c;
+        font-size: 10px;
+        height: 50px;
+        width: 80px;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 40px;
+        margin-left: 220px;
+        width: 80px;
+       
+    }
+    
+  
+    
+    #deliver {
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        border: none;
+        border-radius: 4px;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #deliver:hover {
+        background-color: #DAA520;
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        font-weight: 600;
+    }
+    
+    #deliver:focus {
+        outline: none;
+        box-shadow: 0 0 5px #FFD700;
+    }
+
+
+    .state {
+        display: flex;
+        justify-content: space-between;
+        }
+    
+
+#contactlog{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    margin-top: 30px;
+    
+}
+.allog{
+    margin-top: 20px;
+    margin-left: 55%;
+    font-size: small;
+}
+#emailcheck{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#emailcheck p{
+    font-size: small;
+}
+
+}

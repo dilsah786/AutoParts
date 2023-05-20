@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dpayment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <div id="MainBox">
+        <div id="addresscontainer">
+            <form id="addressform" action="submit">
+
+                <h1 style="text-align: center;font-size: larger;">Welcome to the Payment Page</h1>
+                <div id="contactlog">
+                    <label id="contact" for="Contact">Contact:</label>
+                    <p class="allog">Already have an account? <a style="color: #1425c3" style="text-decoration: none;" href="../Rakshaaa/login.html">Log in</a></p><br>
+                </div>
+                <input class="box" type="email" name="contact" id="email" placeholder="Enter an email address"><br>
+                <div id="emailcheck">
+                    <input style="width: 18px;" type="checkbox" name="" id="emailme">
+                    <p style="margin-bottom: 30px;">Email me with news and offers</p>
+                </div>
+                <div>
+                    <label style="font-size: large;" id="Shipping" for="Shipping">Shipping Address:</label><br><br>
+                    <input class="box" type="text" name="country" id="country" placeholder="Country/Region">
+                </div>
+                <div id="name">
+                    <input type="text" name="name" id="fisrtname" placeholder="First name">
+                    <input type="text" name="name" id="lastname" placeholder="Last name">
+                </div>
+                <input type="text" name="number" id="mobileno" placeholder="Phone Number" maxlength="10">
+                <div>
+                    <input class="box" type="text" name="address" id="address" placeholder="Address"><br>
+                    <input class="box" type="text" name="address" id="apartment" placeholder="Apartment, suite, etc."><br>
+                    <input type="text" name="city" class="state" id="city" placeholder="City">
+                    <input type="text" name="State" class="state" id="state" placeholder="State">
+                    <input type="number" name="" class="state" id="pincode" placeholder="258963">
+                </div>
+                <div id="savecheckbox">
+                    <input style="width: 18px;" type="checkbox" name="saveaddress" id="saveaddress">
+                    <p>Save this information for next time</p>
+                </div>
+        
+                    <button id="deliver" type="submit">Deliver Here</button>
+                
+            </form>
+        </div>
+        <div id="itemcontainer">
+            <div id="paymentOptions">
+                <h2>Payment Options</h2>
+                <div id="cashPayment">
+                    <input type="checkbox" id="cashCheckbox">
+                    <label for="cashCheckbox">Payment by Cash</label>
+                </div>
+                <div id="cardPayment">
+                    <input type="checkbox" id="cardCheckbox">
+                    <label for="cardCheckbox">Payment by Card</label>
+                </div>
+            </div>
+            <form id="payform" action="submit">
+                <div id="name">
+                    <input type="text" name="First name" id="fname" placeholder="First name on card">
+                    <input type="text" name="Last name" id="lname" placeholder="Last name on card">
+                </div>
+                <input type="text" id="cardno" placeholder="Card number" maxlength="16"><br><br>
+                <label for="Exp">Expiry Date:</label>
+                <input type="date" id="myDate" name="myDate" value="2023-05-19" min="2023-01-01" max="2023-12-31">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" placeholder="CVV" maxlength="3"><br><br>
+                <label for="mobileNumber">Mobile Number:</label>
+                <input type="text" id="mobileNumber" placeholder="Phone "maxlength="10">
+                <a href="#">
+                    <button id="valid">Send Otp</button>
+                    </a>
+                <div id="otp" type="text" maxlength="4"></div>
+               
+                 
+            </form>
+            <div> 
+                <button  id=confirm href="#">Confirm</button>
+            </div>
+           
+            <a href="#"></a>
+            <button id="proceedButton">PROCEED TO CASH ON DELIVERY</button>
+        </div>
+        
+    <script src="../Checkout/Dpayment.js"></script>
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
+</head>
+
+  <style>
+    /* Add custom styles here */
+
+    body{
+        margin: 0;
+    }
+    body {
+  position: relative;
+  clear: both;
+  border-bottom: 6px solid #000;
+  padding: 10px;
+  padding-top: 20px;
+  color: #000;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://car-images.bauersecure.com/wp-images/3639/ferrari_f8_spider_68.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Adjust the value to increase or decrease the blur effect */
+  z-index: -1;
+  
+  filter: grayscale(20%) blur(5px);
+
+}
+    .product-container {
+        background-color: rgba(0, 0, 0, 0);
+      border: 2px solid #f1c40f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 800px;
+    }
+
+    #product-description {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    #image-container {
+      margin-right: 20px;
+      overflow: hidden;
+      height: 200px;
+      width: 200px;
+    }
+
+    #image-container img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    #image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    #details-container {
+      flex: 1;
+    }
+
+    .animate__animated {
+      animation-duration: 1s;
+    }
+
+    h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #fecc19; /* Change the font color to a catchy color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.price {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: black; /* Change the font color to a vibrant color */
+}
+
+.discounted-price {
+  color: red;
+  font-size: 18px;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.rating {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f8cd2f; /* Change the font color to a catchy color */
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#add-to-cart {
+  background-color: #f8cd2f; /* Change the background color to a catchy color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+#add-to-cart:hover {
+  background-color: #C17900; /* Change the background color on hover */
+}
+
+
+    .rating {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #quantity-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    #quantity-label {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    #quantity-input {
+      width: 50px;
+      height: 30px;
+      font-size: 16px;
+    }
+
+
+
+    #scroll-images-container {
+      display: flex;
+      overflow-x: scroll;
+      margin-bottom: 20px;
+    }
+
+    #scroll-images-container img {
+      height: 80px;
+      width: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+
+    #product-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    #product-video video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #nav_child_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #949494;
+    width: 70%;
+    margin: auto;
+}
+
+#nav_child_1 p {
+    margin: 7px 0;
+}
+
+#nav_child_2 {
+    width: 100%;
+    background-color: #94949429;
+    padding: 10px 0;
+}
+
+#nav_child_2>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+}
+
+#nav_child_2>div>div:nth-child(1) {
+    width: 22%;
+}
+
+#nav_child_2>div>div:nth-child(1)>img {
+    width: 100%;
+}
+
+#nav_child_2>div>div:nth-child(2) {
+    width: 50%;
+}
+
+#nav_child_2>div>div:nth-child(2)>input {
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#nav_child_2>div>div:nth-child(2)>input::placeholder {
+    color: #949494;
+}
+
+#nav_child_2 > div > div:nth-child(2) > button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  margin-left: -5px;
+  background-color: #ffd027;
+  color: #fff; /* Set the text color to white */
+}
+
+#nav_child_2 > div > div:nth-child(2) > button i {
+  margin-right: 5px; /* Add some spacing between the icon and the text */
+}
+
+#nav_child_2>div>div:nth-child(3) {
+    display: flex;
+    gap: 20px;
+    color: #949494;
+}
+
+#nav_child_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+#nav_child_3>a {
+    text-decoration: none;
+    color: #949494;
+}
+
+#footer_container {
+    margin-top: 60px;
+    padding: 25px 0;
+    background-color: #1a1d1e;
+}
+
+#footer_box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    width: 70%;
+    margin: auto;
+    color: white;
+}
+
+#footer_box>div>h4 {
+    margin-bottom: 0;
+}
+
+#footer_box>div:nth-child(1)>p {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(2)>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(2)>p:nth-child(4) {
+    color: #f8cd2f;
+}
+
+#footer_box>div:nth-child(3)>p {
+    margin: 5px 0;
+}
+
+#footer_box>div:nth-child(3)>p:nth-child(2) {
+    margin-top: 10px;
+}
+
+#footer_box>div:nth-child(4)>input {
+    margin-top: 10px;
+    padding: 6px;
+    width: 95%;
+}
+
+#footer_box>div:nth-child(4)>button {
+    margin-top: 10px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #f8cd2f;
+    font-weight: 600;
+}
+
+#footer_box>div:nth-child(4)>div {
+    display: flex;
+    gap: 15px;
+    margin: 15px 0;
+    color: #949494;
+}
+
+.fa-brands {
+    border: 1px solid #949494;
+    padding: 4px 5px;
+}
+
+.fa-brands:hover {
+    border: 1px solid #f8cd2f;
+}
+
+.fa-facebook-f:hover {
+    color: #f8cd2f;
+}
+
+.fa-twitter:hover {
+    color: #f8cd2f;
+}
+
+.fa-instagram:hover {
+    color: #f8cd2f;
+}
+
+.fa-linkedin-in:hover {
+    color: #f8cd2f;
+}
+
+/* footer End Css */
+
+/* CopuRights Start Css */
+
+#copyrights {
+    background-color: #080808;
+    padding: 3px 0;
+}
+
+#copyrights_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+#copyrights_box>div:nth-child(1)>div {
+    width: 50%;
+}
+
+#copyrights_box>div:nth-child(1)>div>img {
+    width: 100%;
+}
+
+#copyrights_box>div:nth-child(2)>p {
+    text-align: center;
+    color: white;
+    margin: 5px;
+}
+
+
+#copyrights_box>div:nth-child(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#copyrights_box>div:nth-child(3)>div {
+    width: 60%;
+}
+
+#copyrights_box>div:nth-child(3)>div>img {
+    width: 100%;
+}
+
+#yAUot {
+    color: #f8cd2f;
+}
+h1 {
+        font-size: 24px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+      
+    <div id="navbar_container">
+        <div id="nav_parent">
+            <div id="nav_child_1">
+                <p>Help | Order Status</p>
+                <p>Free shipping : On All U.S. Orders Over $100</p>
+                <p><span><i class="fa-solid fa-phone"></i></span> 123.456.7890</p>
+            </div>
+            <div id="nav_child_2">
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="">
+                    </div>
+                    <div>
+                        <input type="text" id="search_input" placeholder="Search by Model Year, Products...">
+                        <button id="search_btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div>
+                        <p>My Account</p>
+                        <p>Garage</p>
+                        <p><i class="fa-solid fa-heart"></i></p>
+                        <p><i class="fa-solid fa-cart-shopping"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div id="nav_child_3">
+                <a href="#">Exterior</a>
+                <a href="#">Interior</a>
+                <a href="#">Performance</a>
+                <a href="#">Wheels and Tires</a>
+                <a href="#">Body Parts</a>
+                <a href="#">Repair Parts</a>
+                <a href="#">Electronics</a>
+                <a href="#">Tools & Garage</a>
+            </div>
+        </div>
+    </div>
+  <div class="product-container">
+    <div id="product-description">
+      <div id="image-container">
+        <img src="https://m.media-amazon.com/images/I/710CHKJ0puL._SX522_.jpg" alt="Product Image">
+      </div>
+      <div id="details-container">
+        <h2 class="animate__animated animate__fadeIn">Tyre Inflator - Exterior Parts</h2>
+        <p class="price">$24.99 <span class="discounted-price">($29.99)</span></p>
+        <p class="rating" ><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 4.4</p>
+        <p class="description animate__animated animate__fadeIn">
+            Our Tyre Inflator is a compact and portable device that allows you to inflate your tires quickly and effortlessly. Whether you're on a road trip, commuting to work, or simply maintaining your vehicle, this product is designed to make the process convenient and hassle-free.
+            <br><br>
+            Features:
+            <ul>
+              <li>Powerful and efficient inflation</li>
+              <li>Easy-to-read pressure gauge</li>
+              <li>Fast and accurate inflation</li>
+              <li>Compact and portable design</li>
+              <li>Includes multiple nozzle attachments</li>
+            </ul>
+            <br>
+            Specifications:
+            <ul>
+              <li>Max Pressure: 150 PSI</li>
+              <li>Power Source: 12V DC</li>
+              <li>Cord Length: 10 feet</li>
+              <li>Dimensions: 6.5 x 4.5 x 2.5 inches</li>
+              <li>Weight: 1.5 lbs</li>
+            </ul>
+          </p>
+          
+        <div id="quantity-container">
+          <label id="quantity-label" for="quantity-input">Quantity:</label>
+          <input type="number" id="quantity-input" value="1" min="1">
+        </div>
+        <button id="add-to-cart" class="animate__animated animate__bounce">Add to Cart</button>
+      </div>
+    </div>
+    <h1>More Items Like This</h1>
+    <div id="scroll-images-container">
+      <img src="https://m.media-amazon.com/images/I/710CHKJ0puL._SX522_.jpg" alt="Image 1">
+      <img src="https://carorbis.com/wp-content/uploads/2022/03/1-01-8-280x280.png" alt="Image 2">
+      <img src="https://m.media-amazon.com/images/I/811iXVSWhtL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 3">
+      <img src="https://m.media-amazon.com/images/I/811iXVSWhtL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 4">
+      <img src="https://m.media-amazon.com/images/I/719bxNCaqoL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 5">
+      <img src="https://m.media-amazon.com/images/I/412nnpFf7sL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 6">
+      <img src="https://m.media-amazon.com/images/I/61Sm+Sg+j6L._AC_UL600_FMwebp_QL65_.jpg" alt="Image 7">
+      <img src="https://m.media-amazon.com/images/I/61sQPJhoi4L._AC_UL600_FMwebp_QL65_.jpg" alt="Image 8">
+      <img src="https://m.media-amazon.com/images/I/31GRisg68fL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 9">
+      <img src="https://m.media-amazon.com/images/I/61bcz-suuiL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 10">
+      <img src="https://m.media-amazon.com/images/I/61q1aUjKSKL._AC_UL600_FMwebp_QL65_.jpg" alt="Image 11">
+      <img src="https://m.media-amazon.com/images/I/61pscEzuw5L._AC_UL600_FMwebp_QL65_.jpg" alt="Image 12">
+    </div>
+
+    <div id="product-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bZ59KR1yI5o" frameborder="0" allowfullscreen></iframe>
+      </div>
+      
+  </div>
+  
+    <!-- footer Start -->
+
+    <div id="footer_container">
+        <div id="footer_box">
+            <div>
+                <h4>About Us</h4>
+                <p>Auto Parts Spares ensures the complete durability and compatibility of its products, it has an upper hand over the automobile marketing industry. We have successfully established our name in the car spare parts market with our loyalty and trustworthiness over customers.</p>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <p>447 Broadway, F1 2,<br> New York, NY, 10013</p>
+                <p>info@convermax.com</p>
+                <p>800-451- 0972</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <p>Customer Service</p>
+                <p>Return Policy</p>
+                <p>Shipping & Delivery</p>
+                <p>Our Story</p>
+                <p>About Us</p>
+                <p>Blog</p>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <input type="text" placeholder="Email Address">
+                <button>Subscribe</button>
+                <div>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+  
+    <!-- footer End -->
+  
+    <div id="copyrights">
+        <div id="copyrights_box">
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/VLNrKz2t/l12.png" alt="logoAuto">
+                </div>
+            </div>
+            <div>
+                <p>copyrights 2023 <span id="yAUot"> AUTO PART</span></p>
+                <p>All rights reserved.</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/52x1785s/allcards.png" alt="AllCards">
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

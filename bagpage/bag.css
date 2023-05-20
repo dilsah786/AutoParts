@@ -1,0 +1,331 @@
+@media (max-width:620px) and (min-width:320px){
+    *{
+        font-size: small;
+    }
+    li {
+        color: grey;
+      }
+      a {
+        color: #d69d0c;
+        text-decoration: none;
+      }
+      /* img {
+        height: 500px;
+      } */
+
+      #appendBag{
+        width:300px;
+        margin-left:-100px;
+      }
+      .border {
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding: 15px;
+        width: 100%;
+      }
+      .spaceEven {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .flexThis {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 10px; */
+      }
+      .donationCash {
+        border: 1px solid lightgray;
+        padding: 5px;
+        width: 17%;
+        border-radius: 50px;
+        text-align: center;
+        color: black;
+        background-color: white;
+      }
+
+      .donationCash:nth-child(4) {
+        /* margin: auto; */
+        text-decoration-color: black;
+        font-weight: 400;
+        width: 20%;
+      }
+      .invisiblebtn {
+        border: 0px;
+        background-color: white;
+        font-weight: 500;
+        font-size: small;
+      }
+      .redbtn {
+        background-color: white;
+        color: #ffc93f;
+        border: 2px solid #ffd93f;
+        border-radius: 5px;
+      }
+      .closerDivs {
+        height: 0px;
+      }
+      .bigRedBtn {
+        width: 90%;
+        /* margin-left: 5%; */
+        margin-top: 20px;
+        height: 40px;
+        background-color: #ffdc3f;
+        color: rgb(255, 255, 255);
+        border: 0px;
+        border-radius: 3px;
+        
+      }
+      .bottomBagNavbar {
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 65%;
+        margin-top: 70px;
+      }
+      .bottomBagNavbar > div > img {
+        height: 30px;
+      }
+      #helpInFightCOVID {
+        display: flex;
+        /* justify-content: space-evenly; */
+      }
+      #discount {
+        color: #22aca5;
+      }
+      #topBagNavbar {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 10px;
+        vertical-align: middle;
+      }
+      #topBagNavbar > img {
+        height: 80%;
+      }
+
+      #sale {
+        text-align: center;
+      }
+      #bagBody {
+        display: flex;
+        width: 60%;
+        margin: auto;
+      }
+      #bagLeft {
+        width: 60%;
+
+        /* font-size: x-small; */
+      }
+      #bagRight {
+        border-left: 1px solid rgb(206, 206, 206);
+        width: 40%;
+        padding-left: 20px;
+        margin-left: 3%;
+      }
+      #bagPin {
+        line-height: 0px;
+        height: 30px;
+        border: 2px solid #ffbc3f;
+        color: #ffc23f;
+        background-color: white;
+        border-radius: 3px;
+      }
+      #roundButtons > div {
+        border: 1px solid black;
+        border-radius: 20px;
+        min-width: 50px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      #pqr{
+        height: 40px; width: 30px;
+        margin-left: 20px;
+      }
+
+      #img101{
+        height:40px;
+        width:50px;
+      }
+      #securelogo{
+    display: flex;
+    width: 190px;
+    height: 35px;
+    flex-direction: row;
+    margin-left: 83%;
+    margin-top: -80px;
+   justify-content: center;
+   justify-content:flex-end;
+   
+}
+.securetext{
+    float: right;
+    letter-spacing: 1px;
+    color:#535766;
+    padding: 10px;
+  margin: 0 20px 0 0;
+ font-size: 10px;
+ font-weight: 600;
+ 
+}
+      @media only screen and (max-width: 900px){
+
+/* div {
+        border: 1px solid red;
+      } */
+      li {
+        color: grey;
+      }
+      a {
+        
+        color: #ff3f6c;
+        text-decoration: none;
+      }
+      /* img {
+        height: 500px;
+      } */
+
+      .border {
+        border: 1px solid grey;
+        border-radius: 5px;
+        padding:0px;
+      }
+      .spaceEven {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .flexThis {
+        display: flex;
+        justify-content: space-between;
+        /* padding: 10px; */
+      }
+      .donationCash {
+        border: 1px solid lightgray;
+        padding: 5px;
+        width: 40%;
+        border-radius: 50px;
+        text-align: center;
+        color: black;
+        background-color: white;
+        font-size: x-small;
+      }
+
+      .donationCash:nth-child(4) {
+        /* margin: auto; */
+        text-decoration-color: black;
+        font-weight: 400;
+        width: 20%;
+      }
+      .invisiblebtn {
+        border: 0px;
+        background-color: white;
+        font-weight: 500;
+        font-size: small;
+      }
+      
+      #appendBag{
+        width:400px;
+        margin-left:px;
+      }
+      .redbtn {
+        background-color: white;
+        color: #080808;
+        border: 1px solid #050505;
+        background-color: #eef608;
+        border-radius: 5px;
+        font-size: x-small;
+        height: 20px;
+        margin-top:20px ;
+      }
+      .closerDivs {
+        height: 0px;
+      }
+      .bigRedBtn {
+        width: 90%;
+        /* margin-left: 5%; */
+        margin-top: 20px;
+        height: 40px;
+        font-size: small;
+        background-color: #ff3f6c;
+        color: rgb(255, 255, 255);
+        border: 0px;
+        border-radius: 3px;
+        
+      }
+      .bottomBagNavbar {
+        /* border: 1px solid red; */
+        border: 2px solid green;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 65%;
+        margin-top: 10%;
+      }
+      .bottomBagNavbar > div > img {
+        height: 30px;
+      }
+      #helpHungry {
+        display: flex;
+        /* justify-content: space-evenly; */
+      }
+      #discount {
+        color: #ff6f00;
+      }
+      #sale {
+        border: 2px solid rgb(9, 232, 46);
+        text-align: center;
+      }
+      #bagBody {
+       
+        display: flex;
+        width: 60%;
+        margin: auto;
+      }
+      #bagLeft {
+       
+        width: 60%;
+        padding-left: 30px;
+        margin-left: 3%;
+        /* font-size: x-small; */
+      }
+      #bagRight {
+       
+        border-left: 1px solid rgb(206, 206, 206);
+        width: 60%;
+        padding-left: 40px;
+        margin-left: 3%;
+      }
+      #bagPin {
+        line-height: 0px;
+        height: 30px;
+        border: 2px solid #f65b08;
+        color: #041721;
+        background-color: rgb(222, 207, 71);
+        border-radius: 3px;
+        font-size: small;
+        width: 100px;
+      }
+      #bagPin:hover{
+        background-color: black;
+        color:#fccf05;
+        border: none;
+        font-size: large;
+      }
+      #roundButtons > div {
+        
+        border: 1px solid #fccf05;
+        border-radius: 10px;
+        min-width: 50px;
+        text-align: center;
+        padding: 5px;
+        height: 50px;
+        font-size: x-small;
+        justify-content:center;
+        
+      }
+
+      
+     
+      }
+}
