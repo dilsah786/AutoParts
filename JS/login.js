@@ -20,7 +20,7 @@ logo.addEventListener("click", GoToHome)
 
 function GoToHome() {
     // Change
-    window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha"
+    window.location.href = ""
 
 }
 
@@ -47,7 +47,7 @@ form.addEventListener("submit", function(event) {
         }
         if (loggedIn) {
             // Change
-            window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha";
+            window.location.href = "";
         } else {
             alert("Invalid email address or password");
         }

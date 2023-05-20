@@ -20,7 +20,7 @@ logo.addEventListener("click", GoToHome)
 
 function GoToHome() {
     // Change
-    window.location.href = "https://github.com/dilsah786/constructweek_Project/tree/Raksha"
+    window.location.href = ""
 
 }
 const signupbtn = document.getElementById("signupbtn");
