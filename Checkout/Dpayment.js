@@ -10,7 +10,7 @@ cartpage.addEventListener("submit",()=>{
 
 let pay= document.getElementById("valid")
 cartpage.addEventListener("submit",()=>{
-    location.href="../bagpage/bag.html"
+    location.href="#"
 
 })
  
@@ -29,7 +29,7 @@ cartpage.addEventListener("submit",()=>{
 //     let state=document.getElementById("country").value;
 //     let pincode=document.getElementById("fisrtname").value;
 
-//     if(email==""){
+//     if(email!=""){
 //         email.style.border="red"
 //     }
 // })
@@ -84,20 +84,22 @@ cartpage.addEventListener("submit",()=>{
 
 
 
+
    //payment
-   document.querySelector("form").addEventListener("submit",SubmitForm);
+   document.getElementById("payform").addEventListener("submit",SubmitPayForm);
 var PayArr= JSON.parse(localStorage.getItem("paymentdetail")) ||[];
 
 
-function SubmitForm(event){
+function SubmitPayForm(event){
     event.preventDefault();
 
     fname=document.getElementById("fname").value;
     lname=document.getElementById("lname").value;
-    cardno=document.getElementById("cardno").value
+    cardno=document.getElementById("cardno").value;
     myDate=document.getElementById("myDate").value;
     mobileNumber=document.getElementById("mobileNumber").value;
      cvv=document.getElementById("cvv").value;
+     enterotp=document.getElementById("enterotp")
 
  PayObj={
     fname:fname,
@@ -105,17 +107,36 @@ function SubmitForm(event){
     cardno:cardno,
     myDate:myDate,
     cvv:cvv,
-    mobileNumber:mobileNumber
+    mobileNumber:mobileNumber,
+    enterotp:enterotp
 }
+
 
 if(fname=="" || lname=="" || cardno=="" || myDate=="" ||cvv=="" || mobileNumber=="" ){
     alert("Fill all the Details");
-    }
-     else{
-        alert("Thank You for Your Order");
-    PayArr.push(PayObj);
-    localStorage.setItem("paymentdetail",JSON.stringify(PayArr));
-    console.log(PayArr);
-    }
+    
 }
+else{
+   
+    alert("Otp has sent to your Mobile");
+    let div=document.getElementById("otp")
+    let otp =document.createElement("input");
+    otp.type="text"
+    otp.placeholder="Enter Your Otp"
+    otp.id="enterotp"
+
+
+    div.appendChild(otp)
+ 
+PayArr.push(PayObj);
+localStorage.setItem("paymentdetail",JSON.stringify(PayArr));
+console.log(PayArr);
+ }
+
+ 
+}
+
+document.getElementById("confirm").addEventListener("click",()=>{
+    alert ("Succcessfull")
+})
 

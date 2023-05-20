@@ -21,6 +21,19 @@
     background-color: #FFD700;
     color: #000;
 }
+#contactlog{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    margin-top: 20px;
+
+}
+.allog{
+    margin-top: 20px;
+    margin-left: 55%;
+    
+}
 
 #itemcontainer {
     width: 50%;
@@ -152,7 +165,24 @@ justify-content: space-between;
 #cardPayment input[type="checkbox"] {
     margin-right: 6px;
 }
-
+#confirm{
+    width: 80px;
+    height: 40px;
+   margin-top: 50px;
+  
+    border-radius: 5px;
+    background-color: #dc900c;
+    margin-left: 350px;
+}
+#confirm:hover{
+    width: 80px;
+    height: 40px;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #ebbf74;
+    
+}
 #proceedButton {
     background-color: #FFD700;
     color: #000;
@@ -162,8 +192,8 @@ justify-content: space-between;
     padding: 6px 12px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 40px;
-    margin-left: 220px;
+    margin-top: 60px;
+    margin-left: 270px;
 }
 
 #proceedButton:hover {
@@ -171,7 +201,7 @@ justify-content: space-between;
 }
 
 #valid {
-    margin-left: 290px;
+    margin-left: 350px;
 }
 
 #deliver {
@@ -200,6 +230,9 @@ justify-content: space-between;
 input{
     margin-bottom: 20px;
 }
+a{
+    text-decoration: none;
+}
 
 
 
@@ -211,7 +244,7 @@ input{
 
 
 
-@media (max-width:900px) and (min-width:300px){
+@media (max-width:800px) and (min-width:300px){
     .divs-body {
         font-family: Arial, sans-serif;
         background-color: #f7f7f7;
@@ -367,7 +400,22 @@ input{
     #cardPayment input[type="checkbox"] {
         margin-right: 6px;
     }
-    
+    #confirm{
+        width: 80px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #dc900c;
+        margin-left: 150px;
+    }
+    #confirm:hover{
+        width: 80px;
+        height: 40px;
+        font-size: larger;
+        font-weight: 500;
+        border-radius: 5px;
+        background-color: #ebbf74;
+        margin-left: 150px;
+    }
     #proceedButton {
         background-color: #FFD700;
         color: #000;
@@ -380,8 +428,6 @@ input{
         margin-top: 40px;
         margin-left: 220px;
         width: 80px;
-       
-       
     }
     
     #proceedButton:hover {
@@ -400,9 +446,7 @@ input{
        
     }
     
-    #valid {
-        margin-left: 290px;
-    }
+  
     
     #deliver {
         background-color: black;
@@ -434,4 +478,26 @@ input{
         justify-content: space-between;
         }
     
+
+#contactlog{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    margin-top: 30px;
+    
+}
+.allog{
+    margin-top: 20px;
+    margin-left: 55%;
+    font-size: small;
+}
+#emailcheck{
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+#emailcheck p{
+    font-size: small;
+}
+
 }
